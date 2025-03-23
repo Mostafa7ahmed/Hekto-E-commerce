@@ -1,0 +1,34 @@
+<h2 class="section-title my-5">TV Products</h2>
+
+<p-carousel
+[value]="products.products"
+[numVisible]="4"
+[numScroll]="1"
+[circular]="true"
+[responsiveOptions]="responsiveOptions"
+autoplayInterval="10000"
+
+
+>
+
+<ng-template pTemplate="item" let-product>
+    <div class="product-card p-2">
+      <div class="image-container">
+        <img [src]="product.image" [alt]="product.title" />
+
+      </div>
+      <div class="bodyCard d-flex justify-content-center flex-column align-items-center p-2 gap-3">
+
+        <h4>{{ product.title.length > 20 ? (product.title | slice:0:20) + '...' : product.title }}</h4>
+
+        <p>Code - {{ product.model.length > 15 ? (product.model | slice:0:15) + '...' : product.model }}</p>
+
+        <span>{{product.price | currency}}</span>
+
+      </div>
+      
+    </div>
+  </ng-template>
+
+</p-carousel>
+

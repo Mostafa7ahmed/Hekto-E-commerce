@@ -1,0 +1,95 @@
+.section-title {
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1A0B5B;
+    text-align: center;
+
+    
+  }
+  
+  .featured-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-card {
+    width: 270px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 31px 0px rgb(0 0 0 / 3%);
+    border: 1px solid #eee;
+    border-radius: 10px;
+
+
+    
+  }
+
+    
+  .image-container {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+
+     img{
+ 
+        height: 178px;
+        width: 178px;
+
+        object-fit: scale-down;
+
+
+     }
+  }
+  .bodyCard h4{
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--pink);
+    transition: background-color 0.3s ease;
+
+
+  }
+  .bodyCard:hover  {
+    background-color: var(--violet);
+    transition: background-color 0.3s ease;
+    color: var(--white) !important;
+    border-radius: 3px ;
+  }
+  
+  .bodyCard:hover h4{
+    color: var(--white) !important;
+  }
+
+
+
+  ::ng-deep .p-carousel-indicator-active .p-carousel-indicator-button{
+    background-color: var(--pink) !important;
+    color: #FFFFFF;
+  }
+  ::ng-deep .p-button-text{
+    color: var(--pink) !important;
+
+  }
+  ::ng-deep .p-button-text:not(:disabled):hover{
+    color: var(--pink) !important;
+    background-color: #fb2e8750 !important;
+
+  }
+
+
+  ::ng-deep .p-carousel-viewport{
+    width: 1200px !important;
+    margin: auto;
+
+  }
+  ::ng-deep  .p-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
